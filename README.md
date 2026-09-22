@@ -1,6 +1,6 @@
 # Credit Card Fraud Detection Backend
 
-A student-friendly backend project that predicts whether a credit card transaction is suspicious. It has no frontend.
+A project that predicts whether a credit card transaction is suspicious. 
 
 ## What the project demonstrates
 
@@ -75,10 +75,6 @@ docker compose down -v
 `model-service/app/train.py` generates synthetic transactions using a fixed random seed. Fraud likelihood increases with signals such as unusually high amounts, long distance from home, foreign transactions, unusual hours, and many transactions in 24 hours. The service derives an `unusual_hour` feature from the submitted hour. A scikit-learn pipeline standardizes the features and trains logistic regression with balanced class weights.
 
 The model is trained when the Python Docker image is built. This keeps the repository small and makes the process reproducible. For a more advanced version, replace the synthetic data with an anonymized public dataset and compare logistic regression with random forest or gradient boosting.
-
-## GitHub instructions
-
-Follow [docs/GITHUB_UPLOAD_GUIDE.md](docs/GITHUB_UPLOAD_GUIDE.md) to create a public GitHub repository and upload this source code.
 
 ## License
 
