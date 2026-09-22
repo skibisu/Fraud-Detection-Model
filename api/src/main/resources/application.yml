@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: fraud-api
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/frauddb}
+    username: ${DB_USERNAME:frauduser}
+    password: ${DB_PASSWORD:fraudpass}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+model:
+  service-url: ${MODEL_SERVICE_URL:http://localhost:8000}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
