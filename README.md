@@ -1,6 +1,6 @@
 # Credit Card Fraud Detection Backend
 
-A student-friendly backend project that predicts whether a credit card transaction is suspicious. It has no frontend.
+A project that predicts whether a credit card transaction is suspicious. 
 
 ## What the project demonstrates
 
@@ -76,9 +76,6 @@ docker compose down -v
 
 The model is trained when the Python Docker image is built. This keeps the repository small and makes the process reproducible. For a more advanced version, replace the synthetic data with an anonymized public dataset and compare logistic regression with random forest or gradient boosting.
 
-## GitHub instructions
-
-Follow [docs/GITHUB_UPLOAD_GUIDE.md](docs/GITHUB_UPLOAD_GUIDE.md) to create a public GitHub repository and upload this source code.
 
 ## License
 
